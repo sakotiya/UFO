@@ -73,25 +73,25 @@ function filterTable()
     let filteredData = tableData;
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    if (date) {
+  if (date) {
     filteredData = filteredData.filter(row => row.datetime === date);
-    };
+  };
 
-    if (city) {
+  if (city) {
     filteredData = filteredData.filter(row => row.city === city);
-    };
+  };
 
-    if (state) {
+  if (state) {
     filteredData = filteredData.filter(row => row.state === state);
-   };
+  };
 
-    if (country) {
+  if (country) {
     filteredData = filteredData.filter(row => row.country === country);
-    };
+  };
 
-    if (shape) {
+  if (shape) {
     filteredData = filteredData.filter(row => row.shape === shape);
-    };
+  };
 
   
     // 10. Finally, rebuild the table using the filtered data
